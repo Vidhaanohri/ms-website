@@ -1,0 +1,67 @@
+#content.content-service {
+  padding: 250px 0;
+  transition: transform 1s ease-in;
+  background: #fff;
+  z-index: 100;
+}
+
+.grid .row .col {
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  width: 100%;
+}
+.grid .row .lg-10-12 {
+  width: 83.33333%;
+}
+.grid .row .lg-push-left-1-12 {
+  margin-left: 8.33333%;
+}
+.h2,
+article blockquote p,
+h2 {
+  font-size: 2.55555rem;
+  line-height: 3.6rem;
+}
+.text-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+#content.content-service .text-columns {
+  margin-top: 90px;
+}
+.text-columns .text-column {
+  width: calc(33.33333% - 70px);
+  padding: 0 0 0 35px;
+  margin: 0 0 70px;
+}
+.text-columns .text-column:not(:nth-child(3n + 1)) {
+  margin-left: 4%;
+}
+.text-columns .text-column h3 {
+  margin: 0 0 25px;
+  position: relative;
+}
+.text-columns .text-column h3:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #0681da;
+  left: -35px;
+  top: 0.5em;
+}
+.appear {
+  opacity: 0;
+  transition: transform opacity 1s ease-in-out;
+}
+.text-column,
+.text-columndelay {
+  opacity: 0;
+  transform: translate(0px, 40px);
+  transition: transform opacity 0.5s ease-in-out;
+}

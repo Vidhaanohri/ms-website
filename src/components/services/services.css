@@ -1,0 +1,94 @@
+#cta {
+  padding: 200px 0 250px;
+  position: relative;
+  background-size: cover;
+  margin-top: -1px;
+  background: #fff;
+}
+#cta .grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+.grid .row.row--ver-middle {
+  align-items: center;
+}
+
+.grid .row {
+  margin-left: -10px;
+  margin-right: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  min-width: 100%;
+}
+.grid .row.service {
+  display: unset;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  width: 100% !important;
+}
+.cta--left {
+  width: 40%;
+}
+.cta--right {
+  align-items: center;
+  position: relative;
+  display: flex;
+  width: 50%;
+}
+.center-text {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.center-text .p-text p {
+  width: 200px;
+}
+#cta .point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  z-index: 1;
+  /* opacity: 0; */
+}
+.cta-list label {
+  color: #4b4b4b;
+}
+.cta__right__btn {
+  position: absolute;
+  bottom: -50%;
+  width: 100%;
+}
+.btn.btn--oval.btn--oval--blue {
+  color: #0681da;
+  border-color: #0681da;
+}
+
+.btn.btn--oval {
+  font-weight: 500;
+  padding: 17px 80px 19px;
+  border: 1px solid hsla(0, 0%, 100%, 0.3);
+  border-radius: 30px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.btn {
+  display: inline-block;
+  font-size: 0.7777rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  position: relative;
+}

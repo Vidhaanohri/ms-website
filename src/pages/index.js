@@ -1,5 +1,4 @@
 export { default as HomePageComponent } from "./home/Home";
-export { default as ServicesPageComponent } from "./services/Services";
 export { default as DemoPage } from "./demo/Demo";
 export { default as RecruitmentPage } from "./recruitment/Recruitment";
 export { default as HrmsPage } from "./hrms/HRMS";
@@ -11,3 +10,4 @@ export { default as AboutAndVisionPage } from "./about/About";
 export { default as OffboardingPage } from "./offboarding/Offboarding";
 export { default as CompanyDemoPage } from "./demo-page/DemoPage";
 export { default as LoginPage } from "./login/Login";
+export { default as FacilityManagementPage } from "./facility/Facility";

@@ -5,7 +5,6 @@ const initialAppState = {
 };
 
 export const reducer = (state = initialAppState, action) => {
-  console.log(action, state);
   switch (action.type) {
     case "ACTIVE_LINK": {
       return { ...state, activePageLink: action.payload };

@@ -73,7 +73,17 @@ aside {
   z-index: 101;
   width: 7.55%;
 }
-
+.btn {
+  display: inline-block;
+  font-size: 0.7777rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
 .btn.btn--burger {
   display: flex;
   flex-direction: column;
@@ -546,7 +556,7 @@ footer .footer__container .footer__content {
     padding-right: 4% !important;
   }
   .download-app-section {
-    margin-right: 4%;
+    margin-right: 0%;
   }
 
   .grid {
@@ -558,6 +568,7 @@ footer .footer__container .footer__content {
   }
   .hrms-handyhrms-app > img {
     width: 100%;
+    height: auto;
   }
 }
 @media screen and (max-width: 968px) {

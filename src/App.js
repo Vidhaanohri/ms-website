@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import {
   AboutAndVisionPage,
   CompanyDemoPage,
-  DemoPage,
+  DemoPage as LanguageSelectedPage,
   HandyHRPage,
   HomePageComponent,
   HrmsPage,
@@ -13,9 +13,11 @@ import {
   PayrollPage,
   ProfessionalManegementPage,
   RecruitmentPage,
+  FacilityManagementPage
 } from "./pages";
 import "./styles.css";
 import { MenuSliderComp } from "./components";
+import { RoutesPathConfig } from "./fixtures/routes-path-config";
 export default function App() {
   const [pos, setPos] = React.useState(0);
   const [menu, setMenu] = React.useState(false);
@@ -33,44 +35,47 @@ export default function App() {
       {/* Page content */}
       <section data-scrollbar="true" id="scroll-container">
         <Switch>
-          <Route path="/:id/contact">
+          <Route path={RoutesPathConfig.contact}>
             <CompanyDemoPage />
           </Route>
-          <Route path="/:id/login">
+          <Route path={RoutesPathConfig.login}>
             <LoginPage />
           </Route>
-          <Route path="/:id/demo-page">
+          <Route path={RoutesPathConfig.takeaDemo}>
             <CompanyDemoPage />
           </Route>
-          <Route path="/:id/offboarding">
+          <Route path={RoutesPathConfig.facilityManagement}>
+            <FacilityManagementPage />
+          </Route>
+          <Route path={RoutesPathConfig.offboarding}>
             <OffboardingPage />
           </Route>
-          <Route path="/:id/about-&-vision">
+          <Route path={RoutesPathConfig.aboutAndVision}>
             <AboutAndVisionPage />
           </Route>
-          <Route path="/:id/professional-services">
+          <Route path={RoutesPathConfig.professionalService}>
             <ProfessionalManegementPage />
           </Route>
-          <Route path="/:id/handy-hr">
+          <Route path={RoutesPathConfig.handyHr}>
             <HandyHRPage />
           </Route>
-          <Route path="/:id/performance-management">
+          <Route path={RoutesPathConfig.performanceManagement}>
             <ManagementPage />
           </Route>
-          <Route path="/:id/payroll">
+          <Route path={RoutesPathConfig.payroll}>
             <PayrollPage />
           </Route>
-          <Route path="/:id/hrms">
+          <Route path={RoutesPathConfig.hrms}>
             <HrmsPage />
           </Route>
-          <Route path="/:id/recruitment">
+          <Route path={RoutesPathConfig.recruitment}>
             <RecruitmentPage />
           </Route>
-          <Route path="/:id">
+          <Route path={RoutesPathConfig.home}>
             <HomePageComponent setPos={setPos} />
           </Route>
-          <Route path="/">
-            <DemoPage />
+          <Route path={RoutesPathConfig.languageSelect}>
+            <LanguageSelectedPage />
           </Route>
         </Switch>
       </section>
@@ -103,14 +108,14 @@ export default function App() {
         <span className="btn--burger__part btn--burger__part--up"></span>
         <span className="btn--burger__part btn--burger__part--down"></span>
       </div>
-      <div class="scrollbar-thumb scrollbar-thumb-y clone clone--1"></div>
-      <div class="scrollbar-thumb scrollbar-thumb-y clone clone--2"></div>
-      <div class="scrollbar-thumb scrollbar-thumb-y clone clone--3"></div>
-      <div class="scrollbar-thumb scrollbar-thumb-y clone clone--4"></div>
+      <div className="scrollbar-thumb scrollbar-thumb-y clone clone--1"></div>
+      <div className="scrollbar-thumb scrollbar-thumb-y clone clone--2"></div>
+      <div className="scrollbar-thumb scrollbar-thumb-y clone clone--3"></div>
+      <div className="scrollbar-thumb scrollbar-thumb-y clone clone--4"></div>
       <MenuSliderComp menu={menu} handle={handleSlide} />
-      <div class="scrollbar-line scrollbar-line--1"></div>
-      <div class="scrollbar-line scrollbar-line--2"></div>
-      <div class="scrollbar-line scrollbar-line--3"></div>
+      <div className="scrollbar-line scrollbar-line--1"></div>
+      <div className="scrollbar-line scrollbar-line--2"></div>
+      <div className="scrollbar-line scrollbar-line--3"></div>
     </div>
   );
 }

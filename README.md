@@ -11,4 +11,4 @@ for running this command you have to install npm in your Computer for more detai
 
 `npm run build`
 
-> for adding the facility card image in card chang the image and icon location in `src/fixtures/facility-card-list.js`
+> for adding the facility card image in card change the image and icon location in `src/fixtures/facility-card-list.js`
